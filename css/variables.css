@@ -1,0 +1,44 @@
+:root {
+  --bg: #eef1f2;
+  --surface: #ffffff;
+  --surface-alt: #e2e7e9;
+  --ink: #12181b;
+  --ink-soft: #4c5860;
+  --ink-faint: #7c8890;
+  --line: #d3dadd;
+  --line-strong: #b7c1c5;
+
+  --signal-green: #0b6e4f;
+  --signal-green-soft: #e3efe9;
+  --signal-red: #c5432b;
+  --signal-red-soft: #f7e6e1;
+
+  --font-display: "Space Grotesk", "Segoe UI", sans-serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --fs-hero: clamp(2.4rem, 4.4vw, 4.1rem);
+  --fs-h2: clamp(1.8rem, 2.6vw, 2.5rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1.05rem;
+  --fs-small: 0.9rem;
+  --fs-micro: 0.78rem;
+
+  --lh-tight: 1.1;
+  --lh-normal: 1.6;
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6.5rem;
+
+  --content-width: 1180px;
+  --radius-sharp: 3px;
+  --radius-soft: 10px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 1px 0 var(--line), 0 8px 24px -18px rgba(18, 24, 27, 0.35);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}

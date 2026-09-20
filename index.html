@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signal — Know the moment something breaks</title>
+  <meta name="description" content="Signal monitors your endpoints every 30 seconds and alerts your team the instant something goes down." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="wrap">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Signal
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features">Product</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#footer">Docs</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn-text">Log in</a>
+        <a href="#pricing" class="btn btn-primary">Start monitoring</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <h1 style="font-size: var(--fs-hero);">Know the moment something breaks.</h1>
+          <p>Signal checks your endpoints every 30 seconds from 12 regions and pages your team the second something goes down — before your customers notice.</p>
+          <div class="hero-actions">
+            <a href="#pricing" class="btn btn-primary">Start monitoring free</a>
+            <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+          </div>
+        </div>
+
+        <div class="status-widget">
+          <details class="build-badge">
+            <summary aria-label="Build info">i</summary>
+            <h3>Website Layout Clone — done by REPLACE_WITH_YOUR_MUID</h3>
+          </details>
+
+          <div class="status-widget-head">
+            <h3>Live status</h3>
+            <span class="status-timestamp">checked 12s ago</span>
+          </div>
+
+          <svg class="pulse-line" viewBox="0 0 300 64" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,32 L40,32 L52,10 L64,54 L76,32 L110,32 L122,20 L134,44 L146,32 L180,32 L192,8 L204,56 L216,32 L300,32" />
+          </svg>
+
+          <ul class="status-rows">
+            <li class="status-row">
+              <span class="service"><span class="dot"></span>API Gateway</span>
+              <span class="latency">142ms</span>
+            </li>
+            <li class="status-row">
+              <span class="service"><span class="dot"></span>Checkout Service</span>
+              <span class="latency">88ms</span>
+            </li>
+            <li class="status-row">
+              <span class="service"><span class="dot is-down"></span>Auth Service</span>
+              <span class="latency">timeout</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div class="wrap">
+        <p class="eyebrow-label">Monitoring uptime for teams at</p>
+        <div class="trust-logos">
+          <span>Fernweh</span>
+          <span>Loop Metrics</span>
+          <span>Basecart</span>
+          <span>Driftwood Labs</span>
+          <span>Nordlicht</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Everything you need to trust your uptime</h2>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card is-lead">
+            <div>
+              <h3>Real-time alerts</h3>
+              <p>The moment a check fails, Signal pages whoever's on call over SMS, phone call, Slack, or PagerDuty — no polling, no missed pages.</p>
+            </div>
+            <div class="lead-visual" aria-hidden="true">
+              <svg width="140" height="90" viewBox="0 0 140 90">
+                <rect x="5" y="50" width="14" height="35" rx="2" fill="var(--signal-green)"></rect>
+                <rect x="27" y="30" width="14" height="55" rx="2" fill="var(--signal-green)"></rect>
+                <rect x="49" y="45" width="14" height="40" rx="2" fill="var(--signal-green)"></rect>
+                <rect x="71" y="10" width="14" height="75" rx="2" fill="var(--signal-red)"></rect>
+                <rect x="93" y="38" width="14" height="47" rx="2" fill="var(--signal-green)"></rect>
+                <rect x="115" y="25" width="14" height="60" rx="2" fill="var(--signal-green)"></rect>
+              </svg>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <h3>Global check locations</h3>
+            <p>Run checks from 12 regions so you always know if it's your server or someone's ISP.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Branded status pages</h3>
+            <p>Give customers a status page to check before they open a ticket.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>Smart escalation</h3>
+            <p>If the first responder doesn't acknowledge in 5 minutes, Signal calls the next person on the list.</p>
+          </article>
+
+          <article class="feature-card">
+            <h3>API and webhooks</h3>
+            <p>Pipe incidents into your own systems the moment they're detected.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Set it up in three steps</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">01</span>
+            <h3>Add your endpoints</h3>
+            <p>Paste in the URLs, ports, or hostnames you want watched.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">02</span>
+            <h3>Set your thresholds</h3>
+            <p>Choose how often to check and what counts as down.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">03</span>
+            <h3>Get alerted instantly</h3>
+            <p>Signal calls, texts, or pings your team the second something slips.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Plans that scale with your stack</h2>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="plan-card">
+            <span class="plan-name">Starter</span>
+            <div class="plan-price">$0<span>/month</span></div>
+            <ul class="plan-features">
+              <li>5 monitors</li>
+              <li>5-minute check interval</li>
+              <li>Email alerts</li>
+            </ul>
+            <a href="#" class="btn btn-ghost btn-block">Start free</a>
+          </div>
+
+          <div class="plan-card is-featured">
+            <span class="plan-name">Team</span>
+            <div class="plan-price">$29<span>/month</span></div>
+            <ul class="plan-features">
+              <li>50 monitors</li>
+              <li>30-second check interval</li>
+              <li>SMS and phone call alerts</li>
+              <li>1 branded status page</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block">Start free trial</a>
+          </div>
+
+          <div class="plan-card">
+            <span class="plan-name">Scale</span>
+            <div class="plan-price">$99<span>/month</span></div>
+            <ul class="plan-features">
+              <li>Unlimited monitors</li>
+              <li>10 check regions</li>
+              <li>Escalation policies</li>
+              <li>Full API access</li>
+            </ul>
+            <a href="#" class="btn btn-ghost btn-block">Talk to sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="wrap">
+        <div>
+          <p class="testimonial-quote">"We caught a checkout outage nine minutes before a single customer complained. That's never happened with any tool we've used before."</p>
+          <p class="testimonial-attribution">Priya Raman — Engineering Lead, Driftwood Labs</p>
+        </div>
+        <div class="lead-visual" style="min-height: 220px;" aria-hidden="true">
+          <svg width="100%" height="140" viewBox="0 0 400 140" preserveAspectRatio="none">
+            <path d="M0,90 L60,90 L80,30 L100,130 L120,90 L200,90 L220,50 L240,110 L260,90 L400,90"
+                  fill="none" stroke="var(--signal-green)" stroke-width="2.5" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="wrap">
+        <h2 style="color: var(--bg); font-size: var(--fs-h2);">Stop finding out about outages from your customers.</h2>
+        <a href="#pricing" class="btn btn-primary" style="background: var(--signal-green); color: var(--bg);">Start monitoring free</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#top" class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            Signal
+          </a>
+          <p style="margin-top: var(--space-2); color: var(--ink-soft); font-size: var(--fs-small); max-width: 32ch;">
+            Uptime monitoring built for small teams who'd rather hear it from Signal than from a customer.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Status pages</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">API reference</a></li>
+            <li><a href="#">Community</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Signal. Built as a layout-clone practice project.</span>
+        <span>Privacy · Terms</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

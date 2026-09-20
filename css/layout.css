@@ -1,0 +1,153 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(238, 241, 242, 0.88);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header .wrap {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 72px;
+}
+
+section {
+  padding-block: var(--space-6);
+}
+
+/* hero */
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.hero-copy {
+  display: grid;
+  gap: var(--space-3);
+  max-width: 46ch;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+/* trust strip */
+.trust {
+  padding-block: var(--space-4);
+  border-block: 1px solid var(--line);
+}
+
+.trust .wrap {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.trust-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+/* features bento grid - one big card + four smaller ones */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(180px, auto);
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.feature-card.is-lead {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.feature-card:not(.is-lead) {
+  grid-column: span 2;
+}
+
+/* how it works */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+/* pricing */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  align-items: stretch;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.plan-features {
+  display: grid;
+  gap: var(--space-1);
+  flex: 1;
+}
+
+/* testimonial */
+.testimonial .wrap {
+  display: grid;
+  grid-template-columns: 0.9fr 1.6fr;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+/* cta banner */
+.cta-banner .wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--space-4);
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: var(--radius-soft);
+  padding: var(--space-4) var(--space-4);
+}
+
+/* footer */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding-block: var(--space-5) var(--space-3);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: var(--space-4);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-5);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--line);
+  color: var(--ink-faint);
+  font-size: var(--fs-small);
+}
