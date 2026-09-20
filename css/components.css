@@ -233,55 +233,22 @@
   color: var(--ink-faint);
 }
 
-/* build badge tooltip */
 .build-badge {
   position: absolute;
   top: var(--space-2);
   right: var(--space-2);
-}
-
-.build-badge summary {
-  list-style: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid var(--line-strong);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--ink-faint);
-  cursor: help;
-}
-
-.build-badge summary::-webkit-details-marker {
-  display: none;
-}
-
-.build-badge summary:hover,
-.build-badge[open] summary {
-  border-color: var(--ink);
-  color: var(--ink);
+  max-width: 55%;
 }
 
 .build-badge h3 {
-  position: absolute;
-  top: 26px;
-  right: 0;
-  width: max-content;
-  max-width: 220px;
-  background: var(--ink);
-  color: var(--bg);
   font-family: var(--font-mono);
   font-size: var(--fs-micro);
   font-weight: 500;
-  line-height: 1.4;
-  padding: 0.5rem 0.7rem;
-  border-radius: var(--radius-sharp);
+  line-height: 1.3;
+  color: var(--ink-faint);
+  text-align: right;
 }
 
-/* feature cards */
 .feature-card {
   background: var(--surface);
   border: 1px solid var(--line);
